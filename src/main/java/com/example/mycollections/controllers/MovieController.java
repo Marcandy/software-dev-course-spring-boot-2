@@ -23,12 +23,11 @@ public class MovieController {
 
     @GetMapping("/html")
     public String getMovieHtml() {
-       String movieList = "<ul>";
+       String movieList = "";
 
        for(Movie movie: movies) {
-           movieList += "<li>" + movie + "<li>";
+           movieList += "<li>" + movie + "</li>";
        }
-       movieList += "</ul>";
         return """
                <html>
                    <body>

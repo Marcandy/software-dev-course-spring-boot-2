@@ -22,13 +22,12 @@ public class AlbumsController {
 
     @GetMapping("/html")
     public String getAlbumsHtml() {
-        String albumsList = "<ul>";
+        String albumsList = "";
 
         for(Albums album : albums) {
-           albumsList += "<li>" + album + "<li>";
+           albumsList += "<li>" + album + "</li>";
         }
 
-        albumsList += "</ul>";
         return """
                    <html>
                        <body>

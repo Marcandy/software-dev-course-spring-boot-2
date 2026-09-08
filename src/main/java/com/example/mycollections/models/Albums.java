@@ -15,7 +15,7 @@ public class Albums extends LibraryItem {
     public String getArtist() {
         return artist;
     }
-    public void setDirector(String director) {
+    public void setArtist(String artist) {
         this.artist = artist;
     }
 

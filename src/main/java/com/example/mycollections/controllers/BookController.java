@@ -23,12 +23,10 @@ public class BookController {
 
     @GetMapping("/html")
     public String getBooksHtml() {
-        String bookList = "<ul>";
+        String bookList = "";
         for (Book book : books) {
             bookList += "<li>" + book + "</li>";
         }
-        bookList += "</ul>";
-
         return """
                 <html>
                     <body>
